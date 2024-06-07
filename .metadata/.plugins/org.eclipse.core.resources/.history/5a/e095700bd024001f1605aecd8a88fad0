@@ -1,0 +1,47 @@
+package vetores.e.matrizes;
+
+import java.util.Scanner;
+
+public class LerNumerosVetor {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int vetorNumeros[] = new int[10];
+		int elementosIndiceImpar[] = new int[10];
+		int elementosPares[] = new int[10];
+		int soma = 0;
+		float media;
+		int numero;
+		
+		//constroi o vetor
+		for (int i = 0; i < vetorNumeros.length; i++) {
+			System.out.print("Digite um número: ");
+			numero = sc.nextInt();
+			vetorNumeros[i] = numero;
+		}
+		
+		for (int i = 0; i < vetorNumeros.length; i++) {
+			if (i % 2 != 0) {
+				elementosIndiceImpar[i] = vetorNumeros[i];
+			}
+			
+			if (vetorNumeros[i] % 2 == 0) {
+				elementosPares[i] = vetorNumeros[i];
+			}
+			
+			soma += vetorNumeros[i];
+		}
+		
+		media = soma / vetorNumeros.length;
+		
+		System.out.println("Elementos nos índices ímpares: ");
+		for (int i = 0; i < elementosIndiceImpar.length; i++) {
+		}
+		
+		sc.close();
+
+	}
+
+}

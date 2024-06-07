@@ -1,0 +1,28 @@
+package vetores.e.matrizes;
+
+import java.util.Scanner;
+
+public class ResultadosMatriz {
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int matrizNumeros[][] = new int[3][3];
+		int numero;
+		
+		for (int linha = 0; linha < matrizNumeros.length; linha++) {
+			
+			for (int coluna = 0; coluna < matrizNumeros.length; coluna++) {
+				System.out.printf("Digite um valor para linha %d e coluna %d: ", matrizNumeros[linha], matrizNumeros[coluna]);
+				numero = sc.nextInt();
+				
+				matrizNumeros[linha][coluna] = numero;
+			}
+			
+		}
+		
+		sc.close();
+		
+	}
+		
+}

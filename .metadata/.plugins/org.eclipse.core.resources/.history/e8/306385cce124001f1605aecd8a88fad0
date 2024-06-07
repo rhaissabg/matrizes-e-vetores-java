@@ -1,0 +1,18 @@
+package vetores.e.matrizes;
+
+import java.util.Scanner;
+
+public class NotasAlunos {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		float notas[][] = new float[10][4];
+		float medias[] = new float[10];
+		
+		sc.close();
+
+	}
+
+}

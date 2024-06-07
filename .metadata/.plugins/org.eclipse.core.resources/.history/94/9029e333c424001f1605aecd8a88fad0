@@ -1,0 +1,20 @@
+package vetores.e.matrizes;
+
+import java.util.Scanner;
+
+public class PosicaoNoVetor {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int numero;
+		
+		System.out.print("Digite o número que deseja encontrar: ");
+		numero = sc.nextInt();
+		
+		sc.close();
+
+	}
+
+}

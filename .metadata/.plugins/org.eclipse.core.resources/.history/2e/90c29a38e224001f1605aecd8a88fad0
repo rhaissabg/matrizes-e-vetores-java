@@ -1,0 +1,28 @@
+package vetores.e.matrizes;
+
+import java.util.Scanner;
+
+public class NotasAlunos {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		float notas[][] = new float[10][4];
+		float medias[] = new float[10];
+		float nota;
+		
+		for (int l = 0; l < notas.length; l++) {
+			for (int c = 0; c < notas.length; c++) {
+				System.out.printf("Digite a %dª nota do %dº aluno: ", (c+1), (l+1));
+				nota = sc.nextFloat();
+				notas[l][c] = nota;
+			}
+			System.out.println();
+		}
+		
+		sc.close();
+
+	}
+
+}
